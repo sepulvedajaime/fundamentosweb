@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dictionary Entry</title>
-</head>
-<body>
-    <h1>ninja</h1>
-    <img src="pronunciation.png" alt="pronunciación">
-    <p>
-        <em>noun</em>
-    </p>
-    <p>
-        <ol>
-            <li>A practitioner skilled in the Japanese art of ninjutsu</li>
-            <li>A programmer who breaks down problems with zen-like focus</li>
-        </ol>
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title></title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:*</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:*:*</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password:*</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Pasword:*</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Birthday:*</td>
+                    <td><input type="date"></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><input type="radio" name="genero" value="male" id="male"></td>
+                    <td><label for="genero">Male</label></td>
+                    <td><input type="radio" name="genero" value="female" id="female"></td>
+                    <td><label for="female">Female</label></td>
+                    <td><input type="radio" name="genero" value="no-binary" id="no-binary"></td>
+                    <td><label for="no-binary">Non-Binary</label></td>
+                    <td><input type="radio" name="genero" value="" id="no-answer"></td>
+                    <td><label for="no-answer">I prefer not to answer</label></td>
+                </tr>
+            </table>
+            <div>
+                <table>
+                    <tr><td>A sort description about myself:</td></tr>
+                    <tr><td><textarea name="descripcion" cols="40" rows="5"></textarea></td></tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>Favorite Language:</td>
+                        <td>
+                            <select name="language">
+                                <option>JavaScript</option>
+                                <option>Python</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="accept" id="accept"></td>
+                        <td><label for="accept">Yes, I wouldlike to receive periodic email updates.</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="Submit" value="Create Account"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
 </html>
