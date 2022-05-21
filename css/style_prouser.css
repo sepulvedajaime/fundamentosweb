@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .container {
+    width: 800px;
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.subcon {
+    background-color: #33C7FF;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+}
+
+.subcon2 {
+    background-color: white;
+    border: 1px solid;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+img.icono {
+    height: 20px;
+    vertical-align: middle;
+}
+
+img.profile {
+   /*  background-color: white; */
+    /* border: 1px solid; */
+    height: 90px;
+    display: scroll;
+    position: fixed;
+    top: 80px;
+    left: 80px;
+}
