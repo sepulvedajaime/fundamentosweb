@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./js/script.js"></script>
+        <title>Bootstrap</title>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <li class="nav-item"></li>
+                    <img src="./img/logo.png" alt="Logo">
+                </li>
+                <li class="nav-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Themes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Expo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Blog</a>
+                </li>
+                <!--     Generando espacio texto/iconos -->
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <li class="nav-item2"></li>
+                <!-- ---------------------------------- -->
+                <li class="nav-item">
+                    <a href="#" onclick="Remove(this)">v4.3</a>
+                </li>
+                <li class="nav-item2">
+                    <a href="#"><img src="./img/ico-git.png" alt="GitHub"></a>
+                </li>
+                <li class="nav-item2">
+                    <a href="#"><img src="./img/ico-twitter.png" alt="Twitter"></a>
+                </li>
+                <li class="nav-item2">
+                    <a href="#"><img src="./img/ico-slack.png" alt="Slack"></a>
+                </li>
+                <li class="nav-item2">
+                    <a href="#"><img src="./img/ico-coll.png" alt="Coll"></a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-primary" onclick="Download()">Download</button>
+                </li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+
+        <div class="main">
+            <div class="subcon">
+                <div class="itemcon">
+                    <h1>Bootstrap</h1>
+                    <h6>Build responsive, mobile-first projects on the web
+                        with the world's most popular front-end component library.<br><br>
+                        Bootstrap is an open source toolkit for developing with HTML, CSS, 
+                        and JS. Quickly prototype your ideas or build your entire app with 
+                        our Sass variables and mixins, responsive grid system, extensive 
+                        prebuilt components, and powerful plugins built on JQuery.<br>
+                    </h6>
+                    <table>
+                        <tr>
+                            <td><button class="btn-item" onclick="GetStartedGo(this)">Get started</button></td>
+                            <td><button class="btn-item" onclick="DownloadBtn(this)">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td><h6>Currently v4.3.1</h6></td>
+                        </tr>
+                    </table>
+                    <div class="sub-itemcon">
+                        <table>
+                            <td>
+                                <img src="./img/ad-segment.png" alt="Ad" onmouseover="Info()">
+                            </td>
+                            <td>
+                                Collect customer data<br>
+                                once with a single API.<br>
+                                Power your entire tech<br>
+                                stack.<br>
+                                ads via carbon
+                            </td>
+                        </table>
+                    </div>
+                </div>
+                <div class="itemcon">
+                    <img src="./img/main_img.png" alt="Main">
+                </div>
+            </div>
+            <br><br><br>
+            <div class="subcon">
+                <div class="itemcon2">
+                    <img src="./img/ico-install.png" alt="install">
+                    <h4>Installation</h4>
+                    <h6>
+                        Include Bootstrap's source Saass and,<br>
+                        JavaScript files via npm, Composer<br>
+                        or Meteor. Package managed<br>
+                        installs don't include<br>
+                        documentation, but do include our<br>
+                        build system and readme.<br>
+                        <br><br>
+                        <h5>$ npm install bootstrap</h5>
+                        <br><br>
+                        <h5>$ gem install bootstrap -v 4.3.1</h5>
+                        <br><br><br>
+                        <hr id="linea">
+                        <br><br>
+                        <button class="btn-item-2">Read installation docs</button>
+                    </h6>
+                </div>
+                <div class="itemcon2">
+                    <img src="./img/ico-cdn.png" alt="cdn">
+                    <h4>BootstrapCDN</h4>
+                    <h6>
+                        When you only need to include<br>
+                        Bootstrap's compiled CSS or JS, you<br>
+                        can use <a href="#">BootstrapCDN</a>.<br>
+                        <h4>CSS only</h4>
+                        <samp id="precod-blue-uno">&#60;link </samp><samp id="precod-blue-dos">rel=</samp><samp id="precod-red">"stylesheet"</samp><samp id="precod-blue-dos"> href=</samp><samp id="precod-red">"http</code>
+                    </h6>
+                    <h4>JS, Popper.js, and jQuery</h4>
+                    <samp id="precod-blue-uno">&#60;script </samp><samp id="precod-blue-dos">src=</samp><samp id="precod-red">"https://code.jquery.</samp><br>
+                    <samp id="precod-blue-uno">&#60;script </samp><samp id="precod-blue-dos">src=</samp><samp id="precod-red">"https://cdnjs.cloudf</samp><br>
+                    <samp id="precod-blue-uno">&#60;script </samp><samp id="precod-blue-dos">src=</samp><samp id="precod-red">"https://stackpath.bo</samp>>
+                    <br><br><br>
+                    <hr id="linea">
+                    <br><br>
+                    <button class="btn-item-2">Explore the docs</button>
+                </div>
+                <div class="itemcon2">
+                    <img src="./img/ico-themes.png" alt="themes">
+                    <h4>Official Themes</h4>
+                    <h6>
+                        Take Bootstrap 4 to the next level<br>
+                        With official premium themes---<br>
+                        toolkits built on Bootstrap with new<br>
+                        components and plugins, docs, and<br>
+                        build tools.<br>
+                    </h6>
+                    <br>
+                    <img src="./img/theme_img.png" alt="theme">
+                    <br><br><br>
+                    <hr id="linea">
+                    <br><br>
+                    <button class="btn-item-2">Browse themes</button>
+                </div>
+            </div>
+            <div class="subcon-dos">
+                <nav>
+                    <ul class="nav-list-footer">
+                        <li class="nav-item-footer">
+                            <a href="#">GitHub</a>
+                        </li>
+                        <li class="nav-item-footer">
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item-footer">
+                            <a href="#">Examples</a>
+                        </li>
+                        <li class="nav-item-footer">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h6>Designed and built with all the love in the world by the <strong>Bootstrap team</strong> with the help of <strong>out contributors.</strong><br>
+                    Currently v4.3.1. Code licensed <strong>MIT</strong>, docs <strong>CC BY 3.0.</strong>
+                </h6>
+            </div>
+        </div>
+    </body>
+</html>

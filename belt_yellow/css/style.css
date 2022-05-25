@@ -1,0 +1,332 @@
+/* Seteando colores en variables
+Seteando valores para que la pagina sea consistente en los navegadores
+Fuentes de referencia:
+https://codepen.io/angeladelise/pen/yLYPyMq 
+https://css--tricks-com.translate.goog/almanac/properties/j/justify-content/?_x_tr_sl=de&_x_tr_tl=es&_x_tr_hl=es
+https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+https://www.smashingmagazine.com/2020/01/understanding-css-grid-lines/
+https://webdesign.tutsplus.com/tutorials/a-comprehensive-guide-to-flexbox-sizing--cms-31948
+*/
+
+:root {
+    /*   color variables */
+    /* --clr-primary: #6aeeb5; */
+    --clr-primary-hover: #29e6a7;
+    --clr-primary-white: #fff;
+    --clr-gray100: #f0f7f8;
+    --clr-gray200: #cfd8dc;
+    --clr-gray300: #A6ACAF;
+    --clr-gray40:  #F0F3F4;
+    --clr-gray20: #f8f9fa;
+    --clr-softpurple: #D7BDE2;
+    --clr-hardpurple: #563d7c;
+  
+    /*   border radius */
+    --radius: 0.2rem;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+/* -----------------------------------   */
+
+  .main {
+    /* width: 800px; */
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  } 
+  
+  .subcon {
+    color: black;
+    height: 700px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+  }
+
+  .subcon-dos {
+    background-color: var(--clr-gray20);
+    color: black;
+    height: 200px;
+    padding-top: 10px;;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subcon-dos h6 {
+    margin: 0;
+    font-family: "Arial";
+    font-size: 14px;
+    color: grey;
+    line-height: 20px;
+    padding-left: 20px;
+  }
+
+  .itemcon {
+    background-color: white;
+    width: 50%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .itemcon h1 {
+    margin: 0;
+    font-family: "Arial";
+    font-size: 50px;
+    color: var(--clr-hardpurple);
+  }
+
+  .itemcon h6 {
+    margin: 0;
+    font-family: "Arial";
+    font-size: 22px;
+    color: var(--clr-gray300);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .itemcon table {
+      width: 100%;
+  }
+
+  .itemcon2 {
+    background-color: var(--clr-gray20);
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: solid white;
+    justify-content: space-around;
+  }
+
+  .itemcon2 h4 {
+    margin: 0;
+    font-family: "Arial";
+    font-size: 28px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .itemcon2 h5 {
+    margin: 0;
+    font-family: "Arial";
+    font-size: 15px;
+    color: grey;
+    line-height: 20px;
+    padding-left: 20px;
+  }
+
+  .itemcon2 h6 {
+    margin: 0;
+    font-family: "Arial";
+    font-size: 14px;
+    color: grey;
+    line-height: 20px;
+    padding-left: 20px;
+  }
+
+  .itemcon2 code {
+    padding-left: 20px;
+  }
+
+  .itemcon2 img {
+    padding-left: 20px;
+  }
+  
+  .sub-itemcon {
+    background-color: var(--clr-gray40);
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  img.icono {
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  .btn-primary {
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    color: yellow;
+    background-color: var(--clr-hardpurple);
+    border: solid yellow;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background: var(--clr-softpurple);
+  }
+
+  .btn-item {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    color: var(--clr-hardpurple);
+    background-color: var(--clr-primary-white);
+    border: solid var(--clr-hardpurple);
+    border-radius: 0.3rem;
+    border-width: 1px;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    width: 95%;
+  }
+
+  .btn-item:hover {
+    background: var(--clr-softpurple);
+  }
+
+  .btn-item-2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.0rem;
+    color: #16B7EC;
+    background-color: var(--clr-primary-white);
+    border: solid #16B7EC;
+    border-radius: 0.3rem;
+    border-width: 1px;
+    margin-left: 20px;
+    padding: 0.5em 0.5rem 0.5em 0.5em;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .btn-item-2:hover {
+    background: var(--clr-softpurple);
+  }
+
+  body {
+    padding: 50px;
+    font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    inline-size: 500px;
+    gap: 20px;
+  }
+  
+  .item1 {
+    border: 1px solid black;
+    grid-column: auto / span 2;
+    grid-row: auto / span 3;
+    margin-top: 20px;
+  }
+  
+  .item2 {
+    border: 1px solid black;
+    margin-top: 20px;
+    grid-column: auto / span 3;
+    height: 90px;
+  }
+  
+  .grid > * {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Menu Navegación Cabecera */
+  .nav-list {
+    background: var(--clr-hardpurple);
+    padding: 1rem 0;
+    /* border-radius: var(--radius); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nav-item {
+    list-style: none;
+    margin-right: 1rem;
+  }
+  
+  .nav-item a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--clr-softpurple);
+    transition: all 200ms ease-in;
+  }
+  
+  .nav-item a:hover {
+    color: var(--clr-primary-white);
+  }
+  
+  .nav-item2 {
+    list-style: none;
+    margin-right: 1rem;
+    align-items: right;
+  }
+
+/* Menu Navegación footer */
+.nav-list-footer {
+    padding: 1rem 0;
+    /* border-radius: var(--radius); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nav-item-footer {
+    list-style: none;
+    margin-right: 1rem;
+  }
+  
+  .nav-item-footer a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+  }
+  
+  .nav-item-footer a:hover {  
+    color: var(--clr-gray300);
+  }
+  
+
+ #linea {
+    size: 1px;
+    width: 30%;
+    border-color: white;
+    margin-left: 10px;
+  }
+ 
+  a {
+      color: #16B7EC;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  #precod-blue-uno {
+    color:#067295;
+    padding-left: 20px;
+  }
+
+  #precod-blue-dos {
+    color:#0693C1;
+  }
+
+  #precod-red {
+    color:red;
+  }
